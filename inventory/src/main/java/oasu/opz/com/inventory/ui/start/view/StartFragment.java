@@ -6,14 +6,17 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import javax.inject.Inject;
+
 import oasu.opz.com.inventory.R;
+import oasu.opz.com.inventory.navigation.Navigator;
 import oasu.opz.com.inventory.ui.common.view.BaseFragment;
 
 public final class StartFragment extends BaseFragment {
 
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
+    public View onCreateView(LayoutInflater layoutInflater, @Nullable ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_start, container, false);
+        return layoutInflater.inflate(R.layout.fragment_start, container, false);
     }
 }
